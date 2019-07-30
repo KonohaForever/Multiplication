@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/P1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/oneA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/oneX"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingRight="4dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/oneX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oneA"
+                android:padding="4dp"
+                android:text="X" />
+
+            <TextView
+                android:id="@+id/oneB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oneA"
+                android:layout_toRightOf="@+id/oneX"
+                android:padding="4dp"
+                android:text="0" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/oneX" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oneX"
+                android:layout_toRightOf="@id/oneX"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/P2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/P1"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/twoA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/twoX"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingRight="4dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/twoX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/twoA"
+                android:padding="4dp"
+                android:text="X" />
+
+            <TextView
+                android:id="@+id/twoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/twoA"
+                android:layout_toRightOf="@+id/twoX"
+                android:padding="4dp"
+                android:text="0" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/twoX" />
+            <TextView
+                android:id="@+id/twoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/twoX"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingRight="4dp"
+                android:text="0"
+                android:layout_below="@+id/twoB"/>
+
+            <TextView
+                android:id="@+id/twoD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/twoB"
+                android:layout_toLeftOf="@id/twoC"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingRight="4dp"
+                android:text="0" />
+        </RelativeLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/first"
+    android:paddingLeft="10dp"
+    android:id="@+id/second"
+    android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/P3"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/threeA"
+            android:layout_toRightOf="@id/threeX"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_below="@+id/threeA"
+            android:id="@+id/threeX"
+            android:padding="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/threeB"
+            android:layout_below="@+id/threeA"
+            android:layout_toRightOf="@+id/threeX"
+            android:padding="4dp"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/threeX"/>
+        <TextView
+            android:id="@+id/threeC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/threeX"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:text="0"
+            android:layout_below="@+id/threeB"/>
+
+        <TextView
+            android:id="@+id/threeD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/threeB"
+            android:layout_toLeftOf="@id/threeC"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:text="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/P4"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/fourA"
+            android:layout_toRightOf="@id/fourX"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_below="@+id/fourA"
+            android:id="@+id/fourX"
+            android:padding="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/fourB"
+            android:layout_below="@+id/fourA"
+            android:layout_toRightOf="@+id/fourX"
+            android:padding="4dp"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fourX"/>
+        <TextView
+            android:id="@+id/fourC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fourX"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:text="0"
+            android:layout_below="@+id/fourB"/>
+
+        <TextView
+            android:id="@+id/fourD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourB"
+            android:layout_toLeftOf="@id/fourC"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:text="0" />
+    </RelativeLayout>
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/second"
+        android:id="@+id/check"
+        android:text="Check"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check"
+        android:layout_centerHorizontal="true"
+        android:text="Next"/>
+     />
+</RelativeLayout>
