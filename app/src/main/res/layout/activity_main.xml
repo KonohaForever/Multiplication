@@ -32,7 +32,8 @@
                 android:paddingLeft="4dp"
                 android:paddingTop="4dp"
                 android:paddingRight="4dp"
-                android:text="0" />
+                android:text="0"
+                />
 
             <TextView
                 android:id="@+id/oneX"
@@ -59,7 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/oneX"
-                android:layout_toRightOf="@id/oneX"/>
+                android:id="@+id/et1"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -102,27 +103,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_below="@+id/twoX" />
-            <TextView
-                android:id="@+id/twoC"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/twoX"
-                android:paddingLeft="4dp"
-                android:paddingTop="4dp"
-                android:paddingRight="4dp"
-                android:text="0"
-                android:layout_below="@+id/twoB"/>
 
-            <TextView
-                android:id="@+id/twoD"
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/twoB"
-                android:layout_toLeftOf="@id/twoC"
-                android:paddingLeft="4dp"
-                android:paddingTop="4dp"
-                android:paddingRight="4dp"
-                android:text="0" />
+                android:layout_below="@id/twoX"
+                android:id="@+id/et2"/>
         </RelativeLayout>
     </LinearLayout>
 <LinearLayout
@@ -168,27 +154,12 @@
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:layout_below="@+id/threeX"/>
-        <TextView
-            android:id="@+id/threeC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/threeX"
-            android:paddingLeft="4dp"
-            android:paddingTop="4dp"
-            android:paddingRight="4dp"
-            android:text="0"
-            android:layout_below="@+id/threeB"/>
 
-        <TextView
-            android:id="@+id/threeD"
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/threeB"
-            android:layout_toLeftOf="@id/threeC"
-            android:paddingLeft="4dp"
-            android:paddingTop="4dp"
-            android:paddingRight="4dp"
-            android:text="0" />
+            android:layout_below="@id/threeX"
+            android:id="@+id/et3"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -226,27 +197,12 @@
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:layout_below="@+id/fourX"/>
-        <TextView
-            android:id="@+id/fourC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/fourX"
-            android:paddingLeft="4dp"
-            android:paddingTop="4dp"
-            android:paddingRight="4dp"
-            android:text="0"
-            android:layout_below="@+id/fourB"/>
 
-        <TextView
-            android:id="@+id/fourD"
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/fourB"
-            android:layout_toLeftOf="@id/fourC"
-            android:paddingLeft="4dp"
-            android:paddingTop="4dp"
-            android:paddingRight="4dp"
-            android:text="0" />
+            android:layout_below="@id/fourX"
+            android:id="@+id/et4"/>
     </RelativeLayout>
 </LinearLayout>
     <Button
@@ -254,6 +210,14 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/second"
+        android:id="@+id/start"
+        android:text="Start"
+        android:onClick="start"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/start"
         android:id="@+id/check"
         android:text="Check"/>
     <Button
@@ -261,6 +225,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/check"
         android:layout_centerHorizontal="true"
-        android:text="Next"/>
-     />
+        android:text="Next"
+        android:onClick="next"
+        android:id="@+id/next"/>
 </RelativeLayout>
